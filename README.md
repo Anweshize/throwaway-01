@@ -1,4 +1,4 @@
-# throwaway-01
+# throwaway README
 Hello
 This is my introduction to github.
 I wish to learn happily.
