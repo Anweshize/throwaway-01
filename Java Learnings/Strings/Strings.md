@@ -121,6 +121,8 @@ System.out.println(fullName.equals("Deepika Padukone"));
 System.out.println(fullName.compareTo("Deepika Padukone"));
 System.out.println(firstName == "Deepika");
 ```
+"If the virtual machine always arranges for equal strings to be shared, then you could use the == operator for testing equality. But only string literals are shared, not strings that are the result of operations like + or substring."
+Do not use the == operator to test whether two strings are equal! It only determines whether or not the strings are stored in the same location. Sure, if strings are in the same location, they must be equal. But it is entirely possible to store multiple copies of identical strings in different places.
 
 ## String formatting
 
@@ -174,3 +176,5 @@ builder.append("World");
 builder.append("!");
 String message = builder.toString();
 System.out.println(message);
+
+
