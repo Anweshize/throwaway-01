@@ -1,3 +1,18 @@
+## Resources 
+* Java for Beginners by Mathew Speake. videos in learning.oreilly.com
+* core java vol 1 by cay s.hortsman
+* core java vol 2 by cay s.hortsman
+
+## Common Class Notes
+Ultimately, whatever complicated logic you write gets translated to these 3 basic constructs.
+1. Do one statement after another
+2. Branch on an if condition
+3. Do it several times in a loop.
+
+Methods have to live in classes. We can look at the class first to know what method we are using. Structure play an important role.
+
+Static void methodName void in Java stands for methods that don't return a value
+
 # Strings
 
 ## Source 
@@ -176,5 +191,8 @@ builder.append("World");
 builder.append("!");
 String message = builder.toString();
 System.out.println(message);
+
+
+## Dec 2 2022
 
 
