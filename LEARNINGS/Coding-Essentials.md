@@ -43,22 +43,24 @@ Source - 1
 * git config pull ff only - if error is fast forward not possible 
 
 Source -2 
+
 The following commands in the vs code terminal to push changes to master origin.
 
-	git status	
-	git pull	
-	git status	
-	git add .	
-	git commit -m "leave a message here"	
-	git push 	
+	* git status	
+	* git pull	
+	* git status	
+	* git add .	
+	* git commit -m "leave a message here"	
+	* git push 	
 		
 		
-VScode to push changes		
-	check changes	in source control
-	Stage changes	click '+' on changes in source control
-	Add message	
-	Click commit (tick mark) 	
-	Sync & push	(or pull then push)
+VScode to push changes	
+
+	* check changes	in source control
+	* Stage changes	click '+' on changes in source control
+	* Add message	
+	* Click commit (tick mark) 	
+	* Sync & push	(or pull then push)
 
 ## Merge Conflict
 
@@ -98,12 +100,13 @@ When same file changes in github, vscode on same line is made.
 Scenario: github change commit, vscode commit then push
 
 merge conflict code flow:
-Accept current change or Incoming change or accept both
-git add .
-git commit -m " "
-git merge
-git pull
-git push
+
+* Accept current change or Incoming change or accept both
+* git add .
+* git commit -m " "
+* git merge
+* git pull
+* git push
 
 
 
