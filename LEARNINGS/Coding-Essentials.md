@@ -43,7 +43,8 @@ Source - 1
 * git config pull ff only - if error is fast forward not possible 
 
 Source -2 
-The following commands in the vs code terminal to push changes to master origin.		
+The following commands in the vs code terminal to push changes to master origin.
+
 	git status	
 	git pull	
 	git status	
@@ -131,13 +132,13 @@ Even if we create something here, it will save as copy
 ## Github Universe: Codespaces - Git coding fast
 
 General software coding steps:
-*checkout code
-*download dependencies
-*Fighting dependecies conflicts
-*installing tools
-*debugging bad interactions with other tools
-*switching branches
-*constant maintenance of our developer environments
+* checkout code
+* download dependencies
+* Fighting dependecies conflicts
+* installing tools
+* debugging bad interactions with other tools
+* switching branches
+* constant maintenance of our developer environments
 
 Codespaces solve above problems, need not to worry about them.
 
