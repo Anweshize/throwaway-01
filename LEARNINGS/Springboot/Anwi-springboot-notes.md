@@ -37,7 +37,7 @@ A-microservice-exposing-its-functionality-over-a-REST-API-and-topic
 
 6. Alignment of Architecture and Organization
 
-    ![3tierarchitecturechanges](C:\Users\ANWESH\HOME GIT\throwaway-01\throwaway-01\LEARNINGS\Springboot\3tierarchitecturechanges.png)
+    ![3tierarchitecturechanges](LEARNINGS\Springboot\3tierarchitecturechanges.png)
 
 
 
