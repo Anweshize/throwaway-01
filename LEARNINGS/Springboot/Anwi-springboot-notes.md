@@ -36,6 +36,7 @@ A-microservice-exposing-its-functionality-over-a-REST-API-and-topic
     Finding a balance between keeping your options open and bearing the cost of architectures like this can be a real art.
 
 6. Alignment of Architecture and Organization
+
     ![3tier-architecture-changes](LEARNINGS\Springboot\3tier-architecture-changes.PNG)
 
 
