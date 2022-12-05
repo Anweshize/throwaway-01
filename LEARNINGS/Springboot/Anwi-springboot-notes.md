@@ -42,7 +42,7 @@ A-microservice-exposing-its-functionality-over-a-REST-API-and-topic
 
 6. Alignment of Architecture and Organization
 
-![Capture](https://user-images.githubusercontent.com/110244625/205536751-6b8aab1a-ff7c-408f-93dc-605c9df0c3fc.jpg)
+    ![Capture](https://user-images.githubusercontent.com/110244625/205536751-6b8aab1a-ff7c-408f-93dc-605c9df0c3fc.jpg)
 
     3tier architecture is old method and changes will need to be managed by each team and deployed in the correct order, as outlined in figure. This architecture has high cohesion of related technology but low cohesion of business functionality.
 
@@ -52,4 +52,3 @@ A-microservice-exposing-its-functionality-over-a-REST-API-and-topic
     
     ![DedicatedMicroservice](https://github.com/Anweshize/throwaway-01/issues/1#issuecomment-1336703457)
 
-    
