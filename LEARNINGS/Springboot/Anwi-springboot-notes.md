@@ -37,4 +37,4 @@ A-microservice-exposing-its-functionality-over-a-REST-API-and-topic
 
 6. Alignment of Architecture and Organization
 
-![image!](LEARNINGS\Springboot\Capture.png)
+![image!](LEARNINGS\Springboot\Capture.jpg)
