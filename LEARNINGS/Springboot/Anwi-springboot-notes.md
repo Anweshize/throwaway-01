@@ -50,5 +50,5 @@ A-microservice-exposing-its-functionality-over-a-REST-API-and-topic
 
     This could be achieved through a single microservice owned by the profile team that exposes a UI to allow customers to update their information, with state of the customer also stored within this microservice.
     
-    ![DedicatedMicroservice](https://github.com/Anweshize/throwaway-01/issues/1#issuecomment-1336703457)
+    ![DedicatedMicroservice](https://user-images.githubusercontent.com/110244625/205544497-1060791f-ba01-4e41-a522-dad68c72ab76.PNG)
 
