@@ -36,5 +36,5 @@ A-microservice-exposing-its-functionality-over-a-REST-API-and-topic
     Finding a balance between keeping your options open and bearing the cost of architectures like this can be a real art.
 
 6. Alignment of Architecture and Organization
+![Capture](https://user-images.githubusercontent.com/110244625/205536751-6b8aab1a-ff7c-408f-93dc-605c9df0c3fc.jpg)
 
-![image!](LEARNINGS\Springboot\Capture.jpg)
