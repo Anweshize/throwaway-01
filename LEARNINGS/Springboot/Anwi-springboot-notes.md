@@ -62,3 +62,6 @@ A-microservice-exposing-its-functionality-over-a-REST-API-and-topic
 2. The Modular Monolith
 
     Each module can be worked on independently, but all still need to be combined together for deployment.
+
+    [modular-monolith](https://user-images.githubusercontent.com/110244625/205802845-b0b019dd-c756-4590-893e-acdd071647c8.PNG)
+    
