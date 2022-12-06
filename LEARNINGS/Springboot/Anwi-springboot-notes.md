@@ -64,3 +64,44 @@ A-microservice-exposing-its-functionality-over-a-REST-API-and-topic
     Each module can be worked on independently, but all still need to be combined together for deployment.
 
     ![modular-monolith](https://user-images.githubusercontent.com/110244625/205802845-b0b019dd-c756-4590-893e-acdd071647c8.PNG)
+
+    Shopify uses modular monolith. If the module boundaries are well defined, it can allow for a high degree of parallel work, while avoiding the challenges of the more distributed microservice architecture by having a much simpler deployment topology. Databases tend to lack decomposition in code level, pulling apart the monolith is challenge, some tried with database decomposition(having seperate databases for different modules).
+
+3. The Distributed Monolith
+
+    A system with multiple services but entire system must be deployed together which is a disadvantage. This architecture is used in information hiding, cohesion of business functionality.
+
+Monoliths and Delivery Contention
+
+    Delivery contention is many developers wanting to push functionality live at different times and confusion around who owns what and who makes decisions. A microservice architecture does give you more concrete boundaries around which ownership lines can be drawn in a system.
+
+
+## Advantages of Monoliths
+
+
+## Enabling Technology
+
+Microservices require an understanding of the supporting technology to such a degree that previous distinctions
+between logical and physical architecture can be problematic.
+
+### Log Aggregation and Distributed Tracing
+
+Log aggregation tool is so essential in understanding how system is behaving, that you should consider it a prerequisite for adopting microservices. These systems allow you to collect and aggregate logs from across all your services, providing you a central place from which logs can be analyzed, and even made part of an active alerting mechanism.
+Implementing correlation IDs, in which a single ID is used for a related set of service calls. By logging this ID as part of each log entry, isolating the logs associated with a given flow of calls becomes much easier, which in turn makes troubleshooting much easier.
+Ex - Jaeger, Lightstep, Honeycomb etc.
+
+### Containers and Kubernetes
+
+Normal virtualization techniques used for microservice instance isolation can be quite heavy when we consider the size of our microservices.
+Containers, on the other hand, provide a much more lightweight way to provision isolated execution for service instances, resulting in faster spin-up times for new container instances, along with being much more cost effective for many architectures.
+Container orchestration platforms like Kubernetes provide the robustness and throughput your service needs while allowing you to manage underlying containers and use them efficiently. Deploying kubernetes is complex, there is a tradeoff of their adoption.
+
+### Streaming
+
+Organizations are wanting to move away from batch reporting operations and toward more real-time feedback, allowing them to react more quickly. Apache Kafka is choice for straming data in a microservice environment. Kafka has started adding stream-processing capabilities in the form of KSQLDB, but you can also use it with dedicated stream-processing solutions like Apache Flink.
+
+### Public Cloud and Serverless
+
+Google Cloud, Microsoft Azure, and Amazon Web Services (AWS).
+Public cloud providers offer a host of managed services, from managed database instances or Kubernetes clusters to message brokers or distributed filesystems.
+Function as a Service (FaaS) platforms are of special interest because they provide a nice abstraction around the deployment of code.
