@@ -14,7 +14,7 @@ A-microservice-exposing-its-functionality-over-a-REST-API-and-topic
 
 [Microservices1](C:\Users\ANWESH\HOME GIT\throwaway-01\throwaway-01\LEARNINGS\Springboot\Microservices1.PNG)
 
-## Key concepts of Microservices
+## KEY CONCEPTS OF MICROSERVICES
 
 1. Indepandant Deployability
 
@@ -48,7 +48,17 @@ A-microservice-exposing-its-functionality-over-a-REST-API-and-topic
 
     We organize them in terms of the way we break our systems apart as there is need to ship software much more quickly these days. A single dedicated team that has full-end-to-end responsibility for making changes to aspects of the customer profile.
 
-    This could be achieved through a single microservice owned by the profile team that exposes a UI to allow customers to update their information, with state of the customer also stored within this microservice.
+    This could be achieved through a single microservice owned by the profile team that exposes a UI to allow customers to update their information, with state of the customer also stored within this microservice. This is a vertical approach.
     
     ![DedicatedMicroservice](https://user-images.githubusercontent.com/110244625/205544497-1060791f-ba01-4e41-a522-dad68c72ab76.PNG)
 
+
+## THE MONOLITH
+
+1. The Single-Process Monolith
+
+    A system in which all of the code is deployed as a single process, an architecture which makes sense for smaller organizations. Processes such as reading data from or storing data into a database, or pretending information to web or mobile applications.
+
+2. The Modular Monolith
+
+    Each module can be worked on independently, but all still need to be combined together for deployment.
