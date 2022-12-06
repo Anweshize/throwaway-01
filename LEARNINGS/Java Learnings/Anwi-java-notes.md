@@ -193,6 +193,14 @@ String message = builder.toString();
 System.out.println(message);
 
 
-## Dec 2 2022
+## Dec 6 2022
 
+'crtl + space' on - shows methods possible 
 
+try() ends scope out of it.
+
+When you write a class, makes sense to write comment about it. It is saved. F12
+
+Biginteger() - instead of int.
+
+final local variable is to make constant.

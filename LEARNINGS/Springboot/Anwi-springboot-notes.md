@@ -105,3 +105,103 @@ Organizations are wanting to move away from batch reporting operations and towar
 Google Cloud, Microsoft Azure, and Amazon Web Services (AWS).
 Public cloud providers offer a host of managed services, from managed database instances or Kubernetes clusters to message brokers or distributed filesystems.
 Function as a Service (FaaS) platforms are of special interest because they provide a nice abstraction around the deployment of code.
+
+
+## Advantages of Microservices
+
+By combining the concepts of information hiding and domain-driven design with the power of distributed systems, microservices can help deliver gains over other distributed architectures.
+
+### Technology Heterogeneity
+
+For performance, we might decide to use a different technology stack that is better able to achieve the required performance levels. For data, different data tech used to achieve inter-connectedness, profiling etc.
+With a system consisting of multiple services, I have multiple new places to try out a new piece of technology. It is easier to manage the risk of upgrades with microservices.
+
+### Robustness
+
+With microservices we can remove problem of bulkheads. A component of a system may fail, but as long as that failure doesn’t cascade, you can isolate the problem, and the rest of the system can carry on working. Service boundaries become your obvious bulkheads.
+
+### Scaling
+
+With smaller services, we can scale just those services that need scaling, allowing us to run other parts of the system on smaller, less powerful hardware & resources.
+
+### Ease of Deployment
+
+With microservices, we can make a change to a single service and deploy it independently of the rest of the system. This allows us to get our code deployed more quickly. If a problem does occur, it can be quickly isolated to an individual service, making fast rollback easy to achieve. It also means that we can get our new functionality out to customers more quickly. This is why Amazon and Netflix use these architectures.
+
+### Organizational Alignment
+
+Microservices also allow us to change ownership of services as the organization changes—enabling us to maintain the alignment between architecture and organization in the future.
+
+### Composability
+
+With microservices, we allow for our functionality to be consumed in different ways for different purposes like web, native application, mobile web, tablet app, or wearable device for customer engagement.
+
+
+## Microservice Pain Points
+
+Complexity in adopting.
+
+### Developer Experience
+
+More resource-intensive runtimes like the JVM can limit the number of microservices that can be run on a single developer machine. In cloud, feedback cycles can suffer greatly. Limiting the scope of developer is straightforward approach, but collective ownership for one developer who is expected to work on any part of system is problem.
+
+### Technology Overload
+
+Microservices may well give you the option for each microservice to be written in a different programming language, to run on a different runtime, or to use a different database—but these are options, not requirements. You’ll need to spend a lot of time understanding issues around data consistency, latency, service modeling, and the like.
+
+### Cost
+
+You’ll likely need to run more things—more processes, more computers, more network, more storage, and more supporting software & licences fee. A direct slowdown in delivery of new functionality or the need to add more people to offset this cost.
+
+### Reporting
+
+Reporting carried out directly on the database of a monolith. With a microservice architecture, we’ve just made reporting much more difficult, because now our data is scattered across multiple logically isolated schemas. 
+
+Real-time reporting on large volumes of data, can work well with a microservice architecture but typically require the adoption of new ideas and associated technology. 
+
+
+### Monitoring and Troubleshooting
+
+With a microservice architecture, do we understand the impact if just a single instance of a service goes down?
+
+With a microservice architecture with tens or hundreds of processes, can we say that a single process CPU stuck at 100% and there'll be a problem?
+
+### Security
+
+more information flows over networks between our services which makes data vulnerable. You might need to direct more care to protecting data in transit and to ensuring that your microservice endpoints are protected so that only authorized parties are able to make use of them.
+
+### Testing
+
+In Microservices the scope of our end-to-end tests becomes very large.The testing will cost more but won’t manage to give you the same level of confidence.
+
+### Latency
+
+Information that previously flowed within only a single process now needs to be serialized, transmitted, and deserialized over networks that you might be exercising more than ever before. Latency issue comes out.
+
+### Data Consistency
+
+Whereas in the past you might have relied on database transactions to manage state changes in single database systems, you’ll need to understand that similar safety cannot easily be provided in a distributed system. Adopting an incremental approach to decomposition, so that you are able to assess the impact of changes to your architecture in production, is really important.
+
+
+## Should I use Microservices?
+
+You need to assess your own problem space, skills, and technology landscape and understand what you are trying to achieve before deciding whether microservices are right for you.
+
+### Whom They Might Not Work For
+
+for brand-new products or startups. This shift in domain models will, in turn, result in more changes being made to service boundaries, and coordinating changes across service boundaries is an expensive undertaking. 
+
+The process of finding product market fit means that you might end up with a very different product at the end than the one you thought you’d build when you started.
+
+It’s much easier to move to microservices later, after you understand where the constraints are in your architecture
+
+### Where they work well
+
+Probably the single biggest reason that organizations adopt microservices is to allow for more developers to work on the same system without getting in each other’s way. Get your architecture and organizational boundaries right, and you allow more people to work independently of each other, reducing delivery contention.
+
+Software as a Service (SaaS) applications are, in general, also a good fit for a microservice architecture. 
+
+These products are typically expected to operate 24-7, which creates challenges when it comes to rolling out changes. The independent releasability of microservice architectures is a huge boon in this area. Furthermore, the microservices can be scaled up or down as required. This means that as you establish a sensible baseline for your system’s load characteristics, you get more control over ensuring that you can scale your system in the most cost-effective way possible.
+you might decide to deploy one service as a set of functions, another as a managed virtual machine (VM), and another on a managed Platform as a Service (PaaS) platform.
+
+Microservices provides huge flexibility as you grow, organizing becomes easy, you can get most out of cloud platforms.
